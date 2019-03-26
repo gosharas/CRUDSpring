@@ -1,18 +1,15 @@
-package ru.spring.dao.interfaces;
-
+package ru.spring.dao.service;
 
 import ru.spring.dao.objects.Contacts;
 
 import java.util.List;
 
-public interface ContactsDao {
-    //read
+public interface IContactsService {
+
     Contacts getContactsByID(int id);
 
-    //update
     void insert(Contacts contacts);
 
-    //delete
     void delete(int id);
 
     List<Contacts> getContactsListAll();

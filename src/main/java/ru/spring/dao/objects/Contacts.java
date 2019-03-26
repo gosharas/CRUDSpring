@@ -1,27 +1,10 @@
 package ru.spring.dao.objects;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
-
-@Component
 public class Contacts {
-
 
     private int id;
     private String name;
     private String author;
-
-    public Contacts(int id, String name, String author) {
-
-        this.id = id;
-        this.name = name;
-        this.author = author;
-    }
-
-    public Contacts() {
-
-    }
-
 
     public int getId() {
         return id;
